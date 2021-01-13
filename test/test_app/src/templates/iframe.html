@@ -1,0 +1,20 @@
+<!-- <%= htmlWebpackPlugin.options.warning %> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <% _.forEach(htmlWebpackPlugin.options.vendorCss, function(css) { %><link href="<%= css %>" rel="stylesheet"><% }); %>
+  </head>
+
+  <body>
+    <section data-main class="main">
+      <img class="loader" src="spinner.gif"/>
+      <h1>Hello World! Is This what is changing?</h1> 
+    </section>
+    <div>
+    <button id="enable"> Enable Notifications</button>
+  </div>
+    <% _.forEach(htmlWebpackPlugin.options.vendorJs, function(js) { %><script type="text/javascript" src="<%= js %>"></script><% }); %>
+  </body>
+  <script src=
+</html>
